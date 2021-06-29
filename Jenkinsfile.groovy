@@ -2,7 +2,7 @@ pipeline{
     agent any
     stages{
         stage('clone repo'){
-            steps{s
+            steps{
                 bat "mvn clean -f my-app"
             }
         }
