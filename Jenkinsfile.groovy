@@ -3,6 +3,7 @@ pipeline{
     stages{
         stage('clone repo'){
             steps{
+                bat "rmdir /Q /S my-app" 
                 bat "mvn clean -f my-app"
             }
         }
